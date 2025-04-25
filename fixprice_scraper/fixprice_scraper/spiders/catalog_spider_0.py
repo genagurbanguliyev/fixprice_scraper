@@ -5,13 +5,8 @@ from urllib.parse import urljoin
 from scrapy.http import Request
 
 class FixPriceSpider(scrapy.Spider):
-    name = "fixprice"
+    name = "fixprice0"
     allowed_domains = ["fix-price.com"]
-
-    custom_settings = {
-        'COOKIES_ENABLED': True
-    }
-
     start_urls = [
         "https://fix-price.com/catalog/kosmetika-i-gigiena/ukhod-za-polostyu-rta",
         "https://fix-price.com/catalog/kosmetika-i-gigiena/ukhod-za-volosami",
