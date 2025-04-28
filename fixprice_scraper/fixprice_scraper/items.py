@@ -3,19 +3,20 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Item, Field
+from datetime import datetime
 
 
-class FixpriceScraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
-
-
-class ProductItem(scrapy.Item):
-    timestamp = scrapy.Field()
-    url = scrapy.Field()
-    title = scrapy.Field()
-    section = scrapy.Field()
-    price_data = scrapy.Field()
-    variants = scrapy.Field()
+class ProductItem(Item):
+    timestamp = Field(default_factory=datetime.now().isoformat())
+    RPC = Field(default=None)
+    url = Field(default=None)
+    title = Field(default=None)
+    marketing_tags = Field(default=list)
+    brand = Field(default=None)
+    section = Field(default=list)
+    price_data = Field(default=dict)
+    stock = Field(default=dict)
+    assets = Field(default=dict)
+    metadata = Field(default=dict)
+    variants = Field(default=1)

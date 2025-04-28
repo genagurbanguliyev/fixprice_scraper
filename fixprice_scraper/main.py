@@ -2,18 +2,33 @@ import os
 import json
 import subprocess
 
+from scrapy.crawler import CrawlerProcess
+from scrapy.utils.project import get_project_settings
+
+from fixprice_scraper.spiders.product_spider import ProductSpiderSpider
 CATALOG_FILE = "catalog.json"
+BASE_URL = "https://fix-price.com"
+
+
+def full_url(url):
+    if url.startswith("/"):
+        return BASE_URL + url
+    return url
+
 
 def catalog_file_exists_and_valid():
     return os.path.exists(CATALOG_FILE) and os.path.getsize(CATALOG_FILE) > 0
+
 
 def run_catalog_spider():
     print("Running catalog_spider to generate catalog.json...")
     subprocess.run(["scrapy", "crawl", "catalog_spider"], check=True)
 
+
 def load_catalog():
     with open(CATALOG_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
+
 
 def display_catalog(catalog_data):
     index_map = {}
@@ -28,6 +43,7 @@ def display_catalog(catalog_data):
                 index_map[key] = child
     return index_map
 
+
 def prompt_user_for_selection():
     return input(
         "\nWrite catalog number that you want to scrape.\n"
@@ -35,6 +51,7 @@ def prompt_user_for_selection():
         "If you want the whole catalog, write just the integer number.\n"
         "If you want only one subcatalog, insert it as a float like 2.2\n> "
     )
+
 
 def parse_user_selection(selection_str, index_map):
     selected = []
@@ -45,6 +62,7 @@ def parse_user_selection(selection_str, index_map):
         else:
             print(f"⚠️ Invalid index: {part}")
     return selected
+
 
 def main():
     if not catalog_file_exists_and_valid():
@@ -59,6 +77,12 @@ def main():
     print("\n✅ You selected:")
     for item in selected_catalogs:
         print(f"- {item['text']} (url: {item.get('link')})")
+
+        # Run the ProductSpider
+        process = CrawlerProcess(get_project_settings())
+        process.crawl(ProductSpiderSpider, catalog_name=item.get('text'), urls=[full_url(item.get('link'))])
+        process.start()
+
 
 if __name__ == "__main__":
     main()
