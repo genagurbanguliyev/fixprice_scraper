@@ -2,7 +2,7 @@ import os
 import json
 import subprocess
 
-CATALOG_FILE = "fixprice_scraper/catalog.json"
+CATALOG_FILE = "catalog.json"
 
 def catalog_file_exists_and_valid():
     return os.path.exists(CATALOG_FILE) and os.path.getsize(CATALOG_FILE) > 0
