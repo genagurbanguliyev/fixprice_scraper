@@ -1,8 +1,8 @@
 import scrapy
 
 
-class LocationSpiderSpider(scrapy.Spider):
-    name = "location_spider"
+class LocationSpider(scrapy.Spider):
+    name = "location"
     allowed_domains = ["fix-price.com"]
     start_urls = ["https://fix-price.com/catalog"]
 

@@ -5,7 +5,7 @@ import subprocess
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 
-from fixprice_scraper.spiders.product_spider import ProductSpiderSpider
+from fixprice_scraper.spiders.product import ProductSpider
 CATALOG_FILE = "catalog.json"
 BASE_URL = "https://fix-price.com"
 
@@ -80,7 +80,7 @@ def main():
 
         # Run the ProductSpider
         process = CrawlerProcess(get_project_settings())
-        process.crawl(ProductSpiderSpider, catalog_name=item.get('text'), urls=[full_url(item.get('link'))])
+        process.crawl(ProductSpider, catalog_name=item.get('text'), urls=[full_url(item.get('link'))])
         process.start()
 
 

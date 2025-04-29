@@ -1,11 +1,9 @@
 import scrapy
-import json
 import time
-from urllib.parse import urljoin
 from scrapy.http import Request
 
 class FixPriceSpider(scrapy.Spider):
-    name = "fixprice0"
+    name = "catalog_0"
     allowed_domains = ["fix-price.com"]
     start_urls = [
         "https://fix-price.com/catalog/kosmetika-i-gigiena/ukhod-za-polostyu-rta",

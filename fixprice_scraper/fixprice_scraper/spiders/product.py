@@ -2,8 +2,8 @@ import scrapy
 from ..items import ProductItem
 
 
-class ProductSpiderSpider(scrapy.Spider):
-    name = "product_spider"
+class ProductSpider(scrapy.Spider):
+    name = "product"
     allowed_domains = ["fix-price.com"]
     # start_urls = ["https://fix-price.com"]
 
@@ -30,13 +30,14 @@ class ProductSpiderSpider(scrapy.Spider):
         yield scrapy.Request(
             url=self.start_urls[0],
             cookies=cookies,
+            meta={'playwright': True},
             callback=self.parse_product
         )
 
     def parse_product(self, response):
         # cards = response.css('div.one-product-in-row')
         cards = response.xpath('//*[@data-observer-tag="intersectionItem"]//div.details')
-        self.log(str(cards[0]))
+        self.log(cards)
         breadcrumb_texts = response.xpath('//div[contains(@class, "crumb")]//span[@itemprop="name"]/text()').getall()[2:]
         if breadcrumb_texts:
             self.section = breadcrumb_texts[2:]

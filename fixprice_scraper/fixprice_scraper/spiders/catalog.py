@@ -2,8 +2,8 @@ import scrapy
 import json
 
 
-class CatalogSpiderSpider(scrapy.Spider):
-    name = "catalog_spider"
+class CatalogSpider(scrapy.Spider):
+    name = "catalog"
     allowed_domains = ["fix-price.com"]
     start_urls = ["https://fix-price.com/catalog"]
 
