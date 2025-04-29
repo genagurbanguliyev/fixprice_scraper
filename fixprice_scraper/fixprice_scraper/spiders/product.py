@@ -5,22 +5,17 @@ from ..items import ProductItem
 class ProductSpider(scrapy.Spider):
     name = "product"
     allowed_domains = ["fix-price.com"]
-    # start_urls = ["https://fix-price.com"]
-
-    custom_settings = {
-        "COOKIES_ENABLED": True,
-        "ROBOTSTXT_OBEY": False
-    }
-
-    # Paste your cookie string here
+    # custom_settings = {
+    #     "COOKIES_ENABLED": True
+    # }
     cookie_string = f"""
            i18n_redirected=ru; _cfuvid=SS9rd5CCsT8.K3BBl1EQo8TNIir0Po91YIlO7yMJQVg-1745298974184-0.0.1.1-604800000; sigma_experiments=%7B%22mainchange_zbrkjexu%22%3A%7B%22value%22%3Afalse%2C%22date%22%3A%222025-04-22%22%7D%7D; token=MzgwOTc4MzMzMQ%3D%3D%3Ae056c232ca0a8b75367c73987c5cb421; _ymab_param=QqS8n_pb_OnCP8-yhGmRB6P59cseidUwZXkwChMjkOU17RRNJderkUXXNckJYkobuBLZsMxLuLfLvzHza_42ZhzX9AQ; is-logged=; visited=true; skip-city=true; cf_clearance=8DQ6tZcFeKM7Pu3Bg0D2wPEMWHC9J2RChgwIrTnjhQ4-1745577439-1.2.1.1-owWAhX3BzbpkmMI6sKEj3cP0yWizR2eLsmhWl59f1XHJsZwyE1S1En1.AtYlfMRnm_ILeC_MdMieds4nquS.pwrDo6b4nCmhUixDRCbNnT3T2kkBP2LCzkNC0Asa3In2R3ic.6mDT6bJT3FhLRg78S_dYbQ.aFbHfXyL0rR1yq7YqjHPWLwiS6o53hL9hVPYAYw7s9pMv7TzSFevFsF9cFt2.XmuEanOgW12752zRBCydD9mlAWoAU_rljaGUnAMUBHfa0qDpsLGR3UnxW64ZAicuZie51Q_jAgsUcSIQzTUXnd2._py9UTCXP8XGa842KQTWmL2B6APm9.dTUV3IO08PlZG5oTm3Y2ngKbKqXE; locality=%7B%22city%22%3A%22%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3%22%2C%22cityId%22%3A55%2C%22longitude%22%3A60.597474%2C%22latitude%22%3A56.838011%2C%22prefix%22%3A%22%D0%B3%22%7D
            """
 
-    def __init__(self, catalog_name, urls, *args, **kwargs):
-        self.start_urls = urls
+    def __init__(self, *args, **kwargs):
+        self.start_urls = ["https://fix-price.com/catalog/vsye-po-35"]
         self.section = []
-        self.catalog_name = catalog_name
+        self.catalog_name = "Распродажа! Всё по 35 руб"
         self.item_count = 0
         self.max_items = 70
         super().__init__(*args, **kwargs)
@@ -30,14 +25,25 @@ class ProductSpider(scrapy.Spider):
         yield scrapy.Request(
             url=self.start_urls[0],
             cookies=cookies,
-            meta={'playwright': True},
+            # meta={
+            #     'playwright': True,
+            #     'playwright_page_methods': [
+            #         # Wait for product cards to be visible in DOM
+            #         {
+            #             "method": "wait_for_selector",
+            #             "args": ["div.regular-price"],  # or '[data-observer-tag="intersectionItem"]'
+            #             "kwargs": {"timeout": 10000}  # 10 seconds max
+            #         }
+            #     ],
+            #     'playwright_context': 'default'
+            # },
             callback=self.parse_product
         )
 
     def parse_product(self, response):
-        # cards = response.css('div.one-product-in-row')
-        cards = response.xpath('//*[@data-observer-tag="intersectionItem"]//div.details')
-        self.log(cards)
+        cards = response.css('div.one-product-in-row')
+        # cards = response.xpath('//*[@data-observer-tag="intersectionItem"]//div.details')
+        self.log(f"cards::::::::::: {cards[0]}")
         breadcrumb_texts = response.xpath('//div[contains(@class, "crumb")]//span[@itemprop="name"]/text()').getall()[2:]
         if breadcrumb_texts:
             self.section = breadcrumb_texts[2:]
@@ -56,32 +62,32 @@ class ProductSpider(scrapy.Spider):
             item['section'] = self.section
 
             # Price block
-            regular_price = card.css('div.regular-price::text').re_first(r'\d+')
-            self.log(f"regular_price:::: {regular_price}")
-
-            current_price = card.css('div.special-price::text').re_first(r'\d+')
-            self.log(f"current_price:::: {current_price}")
-
-            if current_price is None:
-                current_price = regular_price
-
-            price_data = {
-                "current": float(current_price),
-                "original": float(regular_price),
-                "sale_tag": ""
-            }
-
-            if current_price and regular_price and current_price != regular_price:
-                try:
-                    discount = int(100 - (int(current_price) / int(regular_price)) * 100)
-                    price_data['sale_tag'] = f"Скидка {discount}%"
-                except ZeroDivisionError:
-                    pass
-
-            item['price_data'] = price_data
+            # regular_price = card.css('div.regular-price::text').re_first(r'\d+')
+            # self.log(f"regular_price:::: {regular_price}")
+            #
+            # current_price = card.css('div.special-price::text').re_first(r'\d+')
+            # self.log(f"current_price:::: {current_price}")
+            #
+            # if current_price is None:
+            #     current_price = regular_price
+            #
+            # price_data = {
+            #     "current": float(current_price) or None,
+            #     "original": float(regular_price) or None,
+            #     "sale_tag": ""
+            # }
+            #
+            # if current_price and regular_price and current_price != regular_price:
+            #     try:
+            #         discount = int(100 - (int(current_price) / int(regular_price)) * 100)
+            #         price_data['sale_tag'] = f"Скидка {discount}%"
+            #     except ZeroDivisionError:
+            #         pass
+            #
+            # item['price_data'] = price_data
 
             # Variants
-            variants_text = card.css('.variants-count::text').re_first(r'\d+')
+            variants_text = card.css('div.variants-count::text').re_first(r'\d+')
             item['variants'] = int(variants_text) if variants_text else 1
 
             # self.item_count += 1

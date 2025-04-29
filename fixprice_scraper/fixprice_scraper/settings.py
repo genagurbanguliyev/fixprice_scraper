@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = "fixprice_scraper.spiders"
 #USER_AGENT = "fixprice_scraper (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -87,11 +87,12 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
-# Set settings whose default value is deprecated to a future-proof value
-TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
-FEED_EXPORT_ENCODING = "utf-8"
 
 DOWNLOAD_HANDLERS = {
     "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
     "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
 }
+
+# Set settings whose default value is deprecated to a future-proof value
+TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+FEED_EXPORT_ENCODING = "utf-8"
