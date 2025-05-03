@@ -13,6 +13,21 @@ SPIDER_MODULES = ["fixprice_scraper.spiders"]
 NEWSPIDER_MODULE = "fixprice_scraper.spiders"
 
 
+DOWNLOAD_HANDLERS = {
+    "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+}
+
+# Set settings whose default value is deprecated to a future-proof value
+TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+FEED_EXPORT_ENCODING = "utf-8"
+
+COOKIES_ENABLED = True
+COMPRESSION_ENABLED = False
+RETRY_ENABLED = True
+RETRY_TIMES = 3
+DOWNLOAD_DELAY = 1
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "fixprice_scraper (+http://www.yourdomain.com)"
 
@@ -86,13 +101,3 @@ NEWSPIDER_MODULE = "fixprice_scraper.spiders"
 #HTTPCACHE_DIR = "httpcache"
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
-
-
-DOWNLOAD_HANDLERS = {
-    "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
-    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
-}
-
-# Set settings whose default value is deprecated to a future-proof value
-TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
-FEED_EXPORT_ENCODING = "utf-8"

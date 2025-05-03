@@ -2,8 +2,8 @@ import scrapy
 from ..items import ProductItem
 
 
-class ProductSpider(scrapy.Spider):
-    name = "product"
+class ProductOldSpider(scrapy.Spider):
+    name = "product_old"
     allowed_domains = ["fix-price.com"]
     base_url = "https://fix-price.com"
     # cookie_string = """
@@ -11,12 +11,12 @@ class ProductSpider(scrapy.Spider):
     #        """
     cookie_string = "i18n_redirected=ru;  _cfuvid=SS9rd5CCsT8.K3BBl1EQo8TNIir0Po91YIlO7yMJQVg-1745298974184-0.0.1.1-604800000; "
 
-    def __init__(self, catalog_name, urls, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         # self.cookies = {k.strip(): v for k, v in (item.split("=") for item in self.cookie_string.split(";"))}
         self.cookies = {"i18n_redirected": 'ru'}
-        self.start_urls = urls
+        self.start_urls = ["https://fix-price.com/catalog/vsye-po-35"]
         self.section = []
-        self.catalog_name = catalog_name
+        self.catalog_name = "Распродажа! Всё по 35 руб"
         self.item_count = 0
         self.max_items = 70
         super().__init__(*args, **kwargs)
@@ -30,6 +30,12 @@ class ProductSpider(scrapy.Spider):
 
     def parse_product(self, response):
         cards = response.css('div.one-product-in-row')
+        # cards = response.xpath('//*[@data-observer-tag="intersectionItem"]//div.details')
+        # self.log(f"cards::::::::::: {cards[0]}")
+        # breadcrumb_texts = response.xpath('//div[contains(@class, "crumb")]//span[@itemprop="name"]/text()').getall()[2:]
+        # item['section'] = response.xpath('//div[contains(@class, "crumb")]//span[@itemprop="name"]/text()').getall()[2:]
+        # if breadcrumb_texts:
+        #     self.section = breadcrumb_texts[2:]
 
         for card in cards:
             if self.item_count >= self.max_items:
@@ -181,6 +187,16 @@ class ProductSpider(scrapy.Spider):
                 metadata[title] = value
 
         item['metadata'] = metadata
+
+        # Add more characteristics as needed
+        # characteristics = response.css('div.product-characteristics div.characteristic')
+        # for char in characteristics:
+        #     name = char.css('div.char-name::text').get()
+        #     value = char.css('div.char-value::text').get()
+        #     if name and value:
+        #         metadata[name.strip()] = value.strip()
+        #
+        # item['metadata'] = metadata
 
         self.item_count += 1
         yield item

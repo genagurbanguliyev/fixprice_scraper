@@ -1,844 +1,844 @@
 [
     {
-        "text": "Распродажа! Всё по 35 руб",
-        "link": "/catalog/vsye-po-35",
-        "subcatalog": null
+        "title": "Распродажа! Всё по 35 руб",
+        "url": "/catalog/vsye-po-35",
+        "items": []
     },
     {
-        "text": "Спец цена по карте",
-        "link": "/catalog/spets-tsena-po-karte",
-        "subcatalog": [
+        "title": "Спец цена по карте",
+        "url": "/catalog/spets-tsena-po-karte",
+        "items": [
             {
-                "text": "Продукты и напитки",
-                "link": "/catalog/spets-tsena-po-karte/produkty-i-napitki-spets-tsena",
-                "subcatalog": null
+                "title": "Продукты и напитки",
+                "url": "/catalog/spets-tsena-po-karte/produkty-i-napitki-spets-tsena",
+                "items": []
             },
             {
-                "text": "Красота и гигиена",
-                "link": "/catalog/spets-tsena-po-karte/krasota-i-gigiena-spets-tsena",
-                "subcatalog": null
+                "title": "Красота и гигиена",
+                "url": "/catalog/spets-tsena-po-karte/krasota-i-gigiena-spets-tsena",
+                "items": []
             },
             {
-                "text": "Бытовая химия",
-                "link": "/catalog/spets-tsena-po-karte/bytovaya-khimiya-spets-tsena",
-                "subcatalog": null
+                "title": "Бытовая химия",
+                "url": "/catalog/spets-tsena-po-karte/bytovaya-khimiya-spets-tsena",
+                "items": []
             },
             {
-                "text": "Игрушки и канцтовары",
-                "link": "/catalog/spets-tsena-po-karte/igrushki-i-kantstovary-spets-tsena",
-                "subcatalog": null
+                "title": "Игрушки и канцтовары",
+                "url": "/catalog/spets-tsena-po-karte/igrushki-i-kantstovary-spets-tsena",
+                "items": []
             },
             {
-                "text": "Одежда",
-                "link": "/catalog/spets-tsena-po-karte/odezhda-spets-tsena",
-                "subcatalog": null
+                "title": "Одежда",
+                "url": "/catalog/spets-tsena-po-karte/odezhda-spets-tsena",
+                "items": []
             },
             {
-                "text": "Для дома",
-                "link": "/catalog/spets-tsena-po-karte/dlya-doma-spets-tsena",
-                "subcatalog": null
+                "title": "Для дома",
+                "url": "/catalog/spets-tsena-po-karte/dlya-doma-spets-tsena",
+                "items": []
             },
             {
-                "text": "Корм для животных",
-                "link": "/catalog/spets-tsena-po-karte/korm-dlya-zhivotnykh-spets-tsena",
-                "subcatalog": null
+                "title": "Корм для животных",
+                "url": "/catalog/spets-tsena-po-karte/korm-dlya-zhivotnykh-spets-tsena",
+                "items": []
             },
             {
-                "text": "Все для праздника",
-                "link": "/catalog/spets-tsena-po-karte/vse-dlya-prazdnika",
-                "subcatalog": null
+                "title": "Все для праздника",
+                "url": "/catalog/spets-tsena-po-karte/vse-dlya-prazdnika",
+                "items": []
             }
         ]
     },
     {
-        "text": "Коллекция Минимализм&Уют",
-        "link": "/catalog/kollektsiya-minimalizm-uyut",
-        "subcatalog": null
+        "title": "Коллекция Минимализм&Уют",
+        "url": "/catalog/kollektsiya-minimalizm-uyut",
+        "items": []
     },
     {
-        "text": "Коллекция Магия весны",
-        "link": "/catalog/kollektsiya-magiya-vesny",
-        "subcatalog": null
+        "title": "Коллекция Магия весны",
+        "url": "/catalog/kollektsiya-magiya-vesny",
+        "items": []
     },
     {
-        "text": "По приколу",
-        "link": "/catalog/po-prikolu",
-        "subcatalog": null
+        "title": "По приколу",
+        "url": "/catalog/po-prikolu",
+        "items": []
     },
     {
-        "text": "Новинки",
-        "link": "/catalog/novinki",
-        "subcatalog": null
+        "title": "Новинки",
+        "url": "/catalog/novinki",
+        "items": []
     },
     {
-        "text": "Сейчас покупают",
-        "link": "/catalog/seychas-pokupayut",
-        "subcatalog": null
+        "title": "Сейчас покупают",
+        "url": "/catalog/seychas-pokupayut",
+        "items": []
     },
     {
-        "text": "Сад и огород",
-        "link": "/catalog/sad-i-ogorod",
-        "subcatalog": [
+        "title": "Сад и огород",
+        "url": "/catalog/sad-i-ogorod",
+        "items": [
             {
-                "text": "Инструменты для работы в саду",
-                "link": "/catalog/sad-i-ogorod/instrumenty-dlya-raboty-v-sadu",
-                "subcatalog": null
+                "title": "Инструменты для работы в саду",
+                "url": "/catalog/sad-i-ogorod/instrumenty-dlya-raboty-v-sadu",
+                "items": []
             },
             {
-                "text": "Приспособления для полива",
-                "link": "/catalog/sad-i-ogorod/prisposobleniya-dlya-poliva",
-                "subcatalog": null
+                "title": "Приспособления для полива",
+                "url": "/catalog/sad-i-ogorod/prisposobleniya-dlya-poliva",
+                "items": []
             },
             {
-                "text": "Садовый декор",
-                "link": "/catalog/sad-i-ogorod/sadovyy-dekor",
-                "subcatalog": null
+                "title": "Садовый декор",
+                "url": "/catalog/sad-i-ogorod/sadovyy-dekor",
+                "items": []
             },
             {
-                "text": "Горшки и кашпо",
-                "link": "/catalog/sad-i-ogorod/gorshki-i-kashpo",
-                "subcatalog": null
+                "title": "Горшки и кашпо",
+                "url": "/catalog/sad-i-ogorod/gorshki-i-kashpo",
+                "items": []
             },
             {
-                "text": "Товары для дачи и пикника",
-                "link": "/catalog/sad-i-ogorod/tovary-dlya-dachi-i-piknika",
-                "subcatalog": null
+                "title": "Товары для дачи и пикника",
+                "url": "/catalog/sad-i-ogorod/tovary-dlya-dachi-i-piknika",
+                "items": []
             },
             {
-                "text": "Товары для рассады и семена",
-                "link": "/catalog/sad-i-ogorod/tovary-dlya-rassady-i-semena",
-                "subcatalog": null
+                "title": "Товары для рассады и семена",
+                "url": "/catalog/sad-i-ogorod/tovary-dlya-rassady-i-semena",
+                "items": []
             }
         ]
     },
     {
-        "text": "Всё для отдыха на природе!",
-        "link": "/catalog/vsye-dlya-otdykha-na-prirode",
-        "subcatalog": null
+        "title": "Всё для отдыха на природе!",
+        "url": "/catalog/vsye-dlya-otdykha-na-prirode",
+        "items": []
     },
     {
-        "text": "Продукты и напитки",
-        "link": "/catalog/produkty-i-napitki",
-        "subcatalog": [
+        "title": "Продукты и напитки",
+        "url": "/catalog/produkty-i-napitki",
+        "items": [
             {
-                "text": "Молочные продукты",
-                "link": "/catalog/produkty-i-napitki/molochnye-produkty",
-                "subcatalog": null
+                "title": "Молочные продукты",
+                "url": "/catalog/produkty-i-napitki/molochnye-produkty",
+                "items": []
             },
             {
-                "text": "Заправки, соусы, приправы",
-                "link": "/catalog/produkty-i-napitki/zapravki-sousy-pripravy",
-                "subcatalog": null
+                "title": "Заправки, соусы, приправы",
+                "url": "/catalog/produkty-i-napitki/zapravki-sousy-pripravy",
+                "items": []
             },
             {
-                "text": "Мороженое",
-                "link": "/catalog/produkty-i-napitki/morozhenoe",
-                "subcatalog": null
+                "title": "Мороженое",
+                "url": "/catalog/produkty-i-napitki/morozhenoe",
+                "items": []
             },
             {
-                "text": "Мясные консервы",
-                "link": "/catalog/produkty-i-napitki/konservatsiya-myasnaya",
-                "subcatalog": null
+                "title": "Мясные консервы",
+                "url": "/catalog/produkty-i-napitki/konservatsiya-myasnaya",
+                "items": []
             },
             {
-                "text": "Рыбные консервы",
-                "link": "/catalog/produkty-i-napitki/rybnye-konservy",
-                "subcatalog": null
+                "title": "Рыбные консервы",
+                "url": "/catalog/produkty-i-napitki/rybnye-konservy",
+                "items": []
             },
             {
-                "text": "Овощные консервы",
-                "link": "/catalog/produkty-i-napitki/konservatsiya-ovoshchnaya",
-                "subcatalog": null
+                "title": "Овощные консервы",
+                "url": "/catalog/produkty-i-napitki/konservatsiya-ovoshchnaya",
+                "items": []
             },
             {
-                "text": "Бакалея",
-                "link": "/catalog/produkty-i-napitki/bakaleya",
-                "subcatalog": null
+                "title": "Бакалея",
+                "url": "/catalog/produkty-i-napitki/bakaleya",
+                "items": []
             },
             {
-                "text": "Кондитерские изделия",
-                "link": "/catalog/produkty-i-napitki/konditerskie-izdeliya",
-                "subcatalog": null
+                "title": "Кондитерские изделия",
+                "url": "/catalog/produkty-i-napitki/konditerskie-izdeliya",
+                "items": []
             },
             {
-                "text": "Хлебобулочные изделия",
-                "link": "/catalog/produkty-i-napitki/khlebobulochnye-izdeliya",
-                "subcatalog": null
+                "title": "Хлебобулочные изделия",
+                "url": "/catalog/produkty-i-napitki/khlebobulochnye-izdeliya",
+                "items": []
             },
             {
-                "text": "Чай, кофе, сахар",
-                "link": "/catalog/produkty-i-napitki/chay-kofe-sakhar",
-                "subcatalog": null
+                "title": "Чай, кофе, сахар",
+                "url": "/catalog/produkty-i-napitki/chay-kofe-sakhar",
+                "items": []
             },
             {
-                "text": "Жевательная резинка",
-                "link": "/catalog/produkty-i-napitki/zhevatelnye-rezinki",
-                "subcatalog": null
+                "title": "Жевательная резинка",
+                "url": "/catalog/produkty-i-napitki/zhevatelnye-rezinki",
+                "items": []
             },
             {
-                "text": "Фруктовые консервы",
-                "link": "/catalog/produkty-i-napitki/konservatsiya-fruktovaya",
-                "subcatalog": null
+                "title": "Фруктовые консервы",
+                "url": "/catalog/produkty-i-napitki/konservatsiya-fruktovaya",
+                "items": []
             },
             {
-                "text": "Закуски",
-                "link": "/catalog/produkty-i-napitki/zakuski",
-                "subcatalog": null
+                "title": "Закуски",
+                "url": "/catalog/produkty-i-napitki/zakuski",
+                "items": []
             },
             {
-                "text": "Колбасная продукция",
-                "link": "/catalog/produkty-i-napitki/kolbasnaya-produktsiya",
-                "subcatalog": null
+                "title": "Колбасная продукция",
+                "url": "/catalog/produkty-i-napitki/kolbasnaya-produktsiya",
+                "items": []
             },
             {
-                "text": "Соки и нектары",
-                "link": "/catalog/produkty-i-napitki/soki-i-nektary",
-                "subcatalog": null
+                "title": "Соки и нектары",
+                "url": "/catalog/produkty-i-napitki/soki-i-nektary",
+                "items": []
             },
             {
-                "text": "Напитки",
-                "link": "/catalog/produkty-i-napitki/napitki",
-                "subcatalog": null
+                "title": "Напитки",
+                "url": "/catalog/produkty-i-napitki/napitki",
+                "items": []
             },
             {
-                "text": "Вода",
-                "link": "/catalog/produkty-i-napitki/vody",
-                "subcatalog": null
+                "title": "Вода",
+                "url": "/catalog/produkty-i-napitki/vody",
+                "items": []
             },
             {
-                "text": "Алкогольная продукция",
-                "link": "/catalog/produkty-i-napitki/alkogolnaya-produktsiya",
-                "subcatalog": null
+                "title": "Алкогольная продукция",
+                "url": "/catalog/produkty-i-napitki/alkogolnaya-produktsiya",
+                "items": []
             },
             {
-                "text": "Газированные напитки",
-                "link": "/catalog/produkty-i-napitki/gazirovannye-napitki",
-                "subcatalog": null
+                "title": "Газированные напитки",
+                "url": "/catalog/produkty-i-napitki/gazirovannye-napitki",
+                "items": []
             }
         ]
     },
     {
-        "text": "Бытовая химия",
-        "link": "/catalog/bytovaya-khimiya",
-        "subcatalog": [
+        "title": "Бытовая химия",
+        "url": "/catalog/bytovaya-khimiya",
+        "items": [
             {
-                "text": "Средства для кухни",
-                "link": "/catalog/bytovaya-khimiya/sredstva-dlya-kukhni",
-                "subcatalog": null
+                "title": "Средства для кухни",
+                "url": "/catalog/bytovaya-khimiya/sredstva-dlya-kukhni",
+                "items": []
             },
             {
-                "text": "Средства для стирки",
-                "link": "/catalog/bytovaya-khimiya/sredstva-dlya-stirki",
-                "subcatalog": null
+                "title": "Средства для стирки",
+                "url": "/catalog/bytovaya-khimiya/sredstva-dlya-stirki",
+                "items": []
             },
             {
-                "text": "Кондиционеры для белья",
-                "link": "/catalog/bytovaya-khimiya/konditsionery-dlya-belya",
-                "subcatalog": null
+                "title": "Кондиционеры для белья",
+                "url": "/catalog/bytovaya-khimiya/konditsionery-dlya-belya",
+                "items": []
             },
             {
-                "text": "Средства для мытья посуды",
-                "link": "/catalog/bytovaya-khimiya/sredstva-dlya-mytya-posudy",
-                "subcatalog": null
+                "title": "Средства для мытья посуды",
+                "url": "/catalog/bytovaya-khimiya/sredstva-dlya-mytya-posudy",
+                "items": []
             },
             {
-                "text": "Средства для ванной",
-                "link": "/catalog/bytovaya-khimiya/sredstva-dlya-vannoy",
-                "subcatalog": null
+                "title": "Средства для ванной",
+                "url": "/catalog/bytovaya-khimiya/sredstva-dlya-vannoy",
+                "items": []
             },
             {
-                "text": "Универсальные чистящие средства",
-                "link": "/catalog/bytovaya-khimiya/universalnoe-chistyashchee-sredstvo",
-                "subcatalog": null
+                "title": "Универсальные чистящие средства",
+                "url": "/catalog/bytovaya-khimiya/universalnoe-chistyashchee-sredstvo",
+                "items": []
             },
             {
-                "text": "Средства против насекомых",
-                "link": "/catalog/bytovaya-khimiya/sredstva-protiv-nasekomykh",
-                "subcatalog": null
+                "title": "Средства против насекомых",
+                "url": "/catalog/bytovaya-khimiya/sredstva-protiv-nasekomykh",
+                "items": []
             },
             {
-                "text": "Отбеливатели и пятновыводители",
-                "link": "/catalog/bytovaya-khimiya/otbelivateli-i-pyatnovyvoditeli",
-                "subcatalog": null
+                "title": "Отбеливатели и пятновыводители",
+                "url": "/catalog/bytovaya-khimiya/otbelivateli-i-pyatnovyvoditeli",
+                "items": []
             },
             {
-                "text": "Средства для поверхностей",
-                "link": "/catalog/bytovaya-khimiya/sredstva-dlya-poverkhnostey",
-                "subcatalog": null
+                "title": "Средства для поверхностей",
+                "url": "/catalog/bytovaya-khimiya/sredstva-dlya-poverkhnostey",
+                "items": []
             },
             {
-                "text": "Освежители воздуха",
-                "link": "/catalog/bytovaya-khimiya/osvezhiteli-vozdukha",
-                "subcatalog": null
+                "title": "Освежители воздуха",
+                "url": "/catalog/bytovaya-khimiya/osvezhiteli-vozdukha",
+                "items": []
             },
             {
-                "text": "Клеящие средства",
-                "link": "/catalog/bytovaya-khimiya/kleyashchie-sredstva",
-                "subcatalog": null
+                "title": "Клеящие средства",
+                "url": "/catalog/bytovaya-khimiya/kleyashchie-sredstva",
+                "items": []
             }
         ]
     },
     {
-        "text": "Игрушки",
-        "link": "/catalog/igrushki",
-        "subcatalog": [
+        "title": "Игрушки",
+        "url": "/catalog/igrushki",
+        "items": [
             {
-                "text": "Развивающие игры",
-                "link": "/catalog/igrushki/razvivayushchie-igry",
-                "subcatalog": null
+                "title": "Развивающие игры",
+                "url": "/catalog/igrushki/razvivayushchie-igry",
+                "items": []
             },
             {
-                "text": "Игровые наборы, настольные игры",
-                "link": "/catalog/igrushki/igrovye-nabory-nastolnye-igry",
-                "subcatalog": null
+                "title": "Игровые наборы, настольные игры",
+                "url": "/catalog/igrushki/igrovye-nabory-nastolnye-igry",
+                "items": []
             },
             {
-                "text": "Игры на улице",
-                "link": "/catalog/igrushki/igry-na-ulitse",
-                "subcatalog": null
+                "title": "Игры на улице",
+                "url": "/catalog/igrushki/igry-na-ulitse",
+                "items": []
             },
             {
-                "text": "Игрушечный транспорт",
-                "link": "/catalog/igrushki/igrushechnyy-transport",
-                "subcatalog": null
+                "title": "Игрушечный транспорт",
+                "url": "/catalog/igrushki/igrushechnyy-transport",
+                "items": []
             },
             {
-                "text": "Игрушечные пистолетики и мечи",
-                "link": "/catalog/igrushki/igrushechnye-pistoletiki-i-mechi",
-                "subcatalog": null
+                "title": "Игрушечные пистолетики и мечи",
+                "url": "/catalog/igrushki/igrushechnye-pistoletiki-i-mechi",
+                "items": []
             },
             {
-                "text": "Музыкальные игрушки",
-                "link": "/catalog/igrushki/muzykalnye-igrushki",
-                "subcatalog": null
+                "title": "Музыкальные игрушки",
+                "url": "/catalog/igrushki/muzykalnye-igrushki",
+                "items": []
             },
             {
-                "text": "Игры антистресс",
-                "link": "/catalog/igrushki/igry-antistress",
-                "subcatalog": null
+                "title": "Игры антистресс",
+                "url": "/catalog/igrushki/igry-antistress",
+                "items": []
             },
             {
-                "text": "Куклы, кукольные домики и аксессуары",
-                "link": "/catalog/igrushki/kukly-kukolnye-domiki-i-aksessuary",
-                "subcatalog": null
+                "title": "Куклы, кукольные домики и аксессуары",
+                "url": "/catalog/igrushki/kukly-kukolnye-domiki-i-aksessuary",
+                "items": []
             },
             {
-                "text": "Товары для игр в воде",
-                "link": "/catalog/igrushki/tovary-dlya-igr-v-vode",
-                "subcatalog": null
+                "title": "Товары для игр в воде",
+                "url": "/catalog/igrushki/tovary-dlya-igr-v-vode",
+                "items": []
             },
             {
-                "text": "Фигурки и мягкие игрушки",
-                "link": "/catalog/igrushki/figurki-i-myagkie-igrushki",
-                "subcatalog": null
+                "title": "Фигурки и мягкие игрушки",
+                "url": "/catalog/igrushki/figurki-i-myagkie-igrushki",
+                "items": []
             }
         ]
     },
     {
-        "text": "Косметика и гигиена",
-        "link": "/catalog/kosmetika-i-gigiena",
-        "subcatalog": [
+        "title": "Косметика и гигиена",
+        "url": "/catalog/kosmetika-i-gigiena",
+        "items": [
             {
-                "text": "Гигиенические средства",
-                "link": "/catalog/kosmetika-i-gigiena/gigienicheskie-sredstva",
-                "subcatalog": null
+                "title": "Гигиенические средства",
+                "url": "/catalog/kosmetika-i-gigiena/gigienicheskie-sredstva",
+                "items": []
             },
             {
-                "text": "Уход за телом",
-                "link": "/catalog/kosmetika-i-gigiena/ukhod-za-telom",
-                "subcatalog": null
+                "title": "Уход за телом",
+                "url": "/catalog/kosmetika-i-gigiena/ukhod-za-telom",
+                "items": []
             },
             {
-                "text": "Уход за полостью рта",
-                "link": "/catalog/kosmetika-i-gigiena/ukhod-za-polostyu-rta",
-                "subcatalog": null
+                "title": "Уход за полостью рта",
+                "url": "/catalog/kosmetika-i-gigiena/ukhod-za-polostyu-rta",
+                "items": []
             },
             {
-                "text": "Для детской гигиены",
-                "link": "/catalog/kosmetika-i-gigiena/dlya-detskoy-gigieny",
-                "subcatalog": null
+                "title": "Для детской гигиены",
+                "url": "/catalog/kosmetika-i-gigiena/dlya-detskoy-gigieny",
+                "items": []
             }
         ]
     },
     {
-        "text": "Для животных",
-        "link": "/catalog/dlya-zhivotnykh",
-        "subcatalog": [
+        "title": "Для животных",
+        "url": "/catalog/dlya-zhivotnykh",
+        "items": [
             {
-                "text": "Корм для животных",
-                "link": "/catalog/dlya-zhivotnykh/korma-dlya-zhivotnykh",
-                "subcatalog": null
+                "title": "Корм для животных",
+                "url": "/catalog/dlya-zhivotnykh/korma-dlya-zhivotnykh",
+                "items": []
             },
             {
-                "text": "Аксессуары",
-                "link": "/catalog/dlya-zhivotnykh/aksessuary-dlya-zhivotnykh",
-                "subcatalog": null
+                "title": "Аксессуары",
+                "url": "/catalog/dlya-zhivotnykh/aksessuary-dlya-zhivotnykh",
+                "items": []
             }
         ]
     },
     {
-        "text": "Для здоровых начинаний",
-        "link": "/catalog/dlya-zdorovykh-nachinaniy",
-        "subcatalog": [
+        "title": "Для здоровых начинаний",
+        "url": "/catalog/dlya-zdorovykh-nachinaniy",
+        "items": [
             {
-                "text": "Забота о себе",
-                "link": "/catalog/dlya-zdorovykh-nachinaniy/zabota-o-sebe",
-                "subcatalog": null
+                "title": "Забота о себе",
+                "url": "/catalog/dlya-zdorovykh-nachinaniy/zabota-o-sebe",
+                "items": []
             },
             {
-                "text": "SPAкойствие",
-                "link": "/catalog/dlya-zdorovykh-nachinaniy/spakoystvie",
-                "subcatalog": null
+                "title": "SPAкойствие",
+                "url": "/catalog/dlya-zdorovykh-nachinaniy/spakoystvie",
+                "items": []
             },
             {
-                "text": "PROактивность",
-                "link": "/catalog/dlya-zdorovykh-nachinaniy/proaktivnost",
-                "subcatalog": null
+                "title": "PROактивность",
+                "url": "/catalog/dlya-zdorovykh-nachinaniy/proaktivnost",
+                "items": []
             },
             {
-                "text": "Вкус&Польза",
-                "link": "/catalog/dlya-zdorovykh-nachinaniy/vkus-polza",
-                "subcatalog": null
+                "title": "Вкус&Польза",
+                "url": "/catalog/dlya-zdorovykh-nachinaniy/vkus-polza",
+                "items": []
             },
             {
-                "text": "Увлечения по душе",
-                "link": "/catalog/dlya-zdorovykh-nachinaniy/uvlecheniya-po-dushe",
-                "subcatalog": null
+                "title": "Увлечения по душе",
+                "url": "/catalog/dlya-zdorovykh-nachinaniy/uvlecheniya-po-dushe",
+                "items": []
             },
             {
-                "text": "Готовить здорово!",
-                "link": "/catalog/dlya-zdorovykh-nachinaniy/gotovit-zdorovo",
-                "subcatalog": null
+                "title": "Готовить здорово!",
+                "url": "/catalog/dlya-zdorovykh-nachinaniy/gotovit-zdorovo",
+                "items": []
             }
         ]
     },
     {
-        "text": "Красота",
-        "link": "/catalog/krasota-i-zdorove",
-        "subcatalog": [
+        "title": "Красота",
+        "url": "/catalog/krasota-i-zdorove",
+        "items": [
             {
-                "text": "Для лица",
-                "link": "/catalog/krasota-i-zdorove/dlya-litsa",
-                "subcatalog": null
+                "title": "Для лица",
+                "url": "/catalog/krasota-i-zdorove/dlya-litsa",
+                "items": []
             },
             {
-                "text": "Для тела",
-                "link": "/catalog/krasota-i-zdorove/dlya-tela",
-                "subcatalog": null
+                "title": "Для тела",
+                "url": "/catalog/krasota-i-zdorove/dlya-tela",
+                "items": []
             },
             {
-                "text": "Для ногтей",
-                "link": "/catalog/krasota-i-zdorove/dlya-nogtey",
-                "subcatalog": null
+                "title": "Для ногтей",
+                "url": "/catalog/krasota-i-zdorove/dlya-nogtey",
+                "items": []
             },
             {
-                "text": "Макияж",
-                "link": "/catalog/krasota-i-zdorove/makiyazh",
-                "subcatalog": null
+                "title": "Макияж",
+                "url": "/catalog/krasota-i-zdorove/makiyazh",
+                "items": []
             },
             {
-                "text": "Для волос",
-                "link": "/catalog/krasota-i-zdorove/dlya-volos",
-                "subcatalog": null
+                "title": "Для волос",
+                "url": "/catalog/krasota-i-zdorove/dlya-volos",
+                "items": []
             }
         ]
     },
     {
-        "text": "Для дома",
-        "link": "/catalog/dlya-doma",
-        "subcatalog": [
+        "title": "Для дома",
+        "url": "/catalog/dlya-doma",
+        "items": [
             {
-                "text": "Для уборки",
-                "link": "/catalog/dlya-doma/tovary-dlya-uborki",
-                "subcatalog": null
+                "title": "Для уборки",
+                "url": "/catalog/dlya-doma/tovary-dlya-uborki",
+                "items": []
             },
             {
-                "text": "Аксессуары для обуви",
-                "link": "/catalog/dlya-doma/aksessuary-dlya-obuvi",
-                "subcatalog": null
+                "title": "Аксессуары для обуви",
+                "url": "/catalog/dlya-doma/aksessuary-dlya-obuvi",
+                "items": []
             },
             {
-                "text": "Для ванной",
-                "link": "/catalog/dlya-doma/dlya-vannoy",
-                "subcatalog": null
+                "title": "Для ванной",
+                "url": "/catalog/dlya-doma/dlya-vannoy",
+                "items": []
             },
             {
-                "text": "Хозяйственные мелочи",
-                "link": "/catalog/dlya-doma/khozyaystvennye-melochi",
-                "subcatalog": null
+                "title": "Хозяйственные мелочи",
+                "url": "/catalog/dlya-doma/khozyaystvennye-melochi",
+                "items": []
             },
             {
-                "text": "Электротовары",
-                "link": "/catalog/dlya-doma/elektrotovary",
-                "subcatalog": null
+                "title": "Электротовары",
+                "url": "/catalog/dlya-doma/elektrotovary",
+                "items": []
             },
             {
-                "text": "Организация хранения",
-                "link": "/catalog/dlya-doma/organizatsiya-khraneniya",
-                "subcatalog": null
+                "title": "Организация хранения",
+                "url": "/catalog/dlya-doma/organizatsiya-khraneniya",
+                "items": []
             },
             {
-                "text": "Для кухни",
-                "link": "/catalog/dlya-doma/dlya-kukhni",
-                "subcatalog": null
+                "title": "Для кухни",
+                "url": "/catalog/dlya-doma/dlya-kukhni",
+                "items": []
             },
             {
-                "text": "Текстиль",
-                "link": "/catalog/dlya-doma/tekstil",
-                "subcatalog": null
+                "title": "Текстиль",
+                "url": "/catalog/dlya-doma/tekstil",
+                "items": []
             },
             {
-                "text": "Аксессуары для одежды",
-                "link": "/catalog/dlya-doma/aksessuary-dlya-odezhdy",
-                "subcatalog": null
+                "title": "Аксессуары для одежды",
+                "url": "/catalog/dlya-doma/aksessuary-dlya-odezhdy",
+                "items": []
             },
             {
-                "text": "Для ремонта",
-                "link": "/catalog/dlya-doma/dlya-remonta",
-                "subcatalog": null
+                "title": "Для ремонта",
+                "url": "/catalog/dlya-doma/dlya-remonta",
+                "items": []
             },
             {
-                "text": "Полотенца",
-                "link": "/catalog/dlya-doma/polotentsa",
-                "subcatalog": null
+                "title": "Полотенца",
+                "url": "/catalog/dlya-doma/polotentsa",
+                "items": []
             },
             {
-                "text": "Для рыбалки",
-                "link": "/catalog/dlya-doma/dlya-rybalki",
-                "subcatalog": null
+                "title": "Для рыбалки",
+                "url": "/catalog/dlya-doma/dlya-rybalki",
+                "items": []
             }
         ]
     },
     {
-        "text": "Декор для дома, товары для праздника",
-        "link": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika",
-        "subcatalog": [
+        "title": "Декор для дома, товары для праздника",
+        "url": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika",
+        "items": [
             {
-                "text": "Игры и розыгрыши",
-                "link": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika/igry-i-rozygryshi",
-                "subcatalog": null
+                "title": "Игры и розыгрыши",
+                "url": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika/igry-i-rozygryshi",
+                "items": []
             },
             {
-                "text": "Тематические праздники",
-                "link": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika/tematicheskie-prazdniki",
-                "subcatalog": null
+                "title": "Тематические праздники",
+                "url": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika/tematicheskie-prazdniki",
+                "items": []
             },
             {
-                "text": "Все для вечеринки",
-                "link": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika/vse-dlya-vecherinki",
-                "subcatalog": null
+                "title": "Все для вечеринки",
+                "url": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika/vse-dlya-vecherinki",
+                "items": []
             },
             {
-                "text": "Товары для декора",
-                "link": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika/tovary-dlya-dekora",
-                "subcatalog": null
+                "title": "Товары для декора",
+                "url": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika/tovary-dlya-dekora",
+                "items": []
             },
             {
-                "text": "Товары для пикника",
-                "link": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika/tovary-dlya-piknika",
-                "subcatalog": null
+                "title": "Товары для пикника",
+                "url": "/catalog/dekor-dlya-doma-tovary-dlya-prazdnika/tovary-dlya-piknika",
+                "items": []
             }
         ]
     },
     {
-        "text": "Сувениры и подарки",
-        "link": "/catalog/suveniry-i-podarki",
-        "subcatalog": [
+        "title": "Сувениры и подарки",
+        "url": "/catalog/suveniry-i-podarki",
+        "items": [
             {
-                "text": "Подарочная упаковка",
-                "link": "/catalog/suveniry-i-podarki/podarochnaya-upakovka",
-                "subcatalog": null
+                "title": "Подарочная упаковка",
+                "url": "/catalog/suveniry-i-podarki/podarochnaya-upakovka",
+                "items": []
             },
             {
-                "text": "Наклейки и открытки",
-                "link": "/catalog/suveniry-i-podarki/nakleyki-i-otkrytki",
-                "subcatalog": null
+                "title": "Наклейки и открытки",
+                "url": "/catalog/suveniry-i-podarki/nakleyki-i-otkrytki",
+                "items": []
             },
             {
-                "text": "Вазы, цветы, флористика",
-                "link": "/catalog/suveniry-i-podarki/vazy-tsvety-floristika",
-                "subcatalog": null
+                "title": "Вазы, цветы, флористика",
+                "url": "/catalog/suveniry-i-podarki/vazy-tsvety-floristika",
+                "items": []
             },
             {
-                "text": "Тематические товары",
-                "link": "/catalog/suveniry-i-podarki/tematicheskie-tovary",
-                "subcatalog": null
+                "title": "Тематические товары",
+                "url": "/catalog/suveniry-i-podarki/tematicheskie-tovary",
+                "items": []
             },
             {
-                "text": "Фигурки и статуэтки",
-                "link": "/catalog/suveniry-i-podarki/figurki-i-statuetki",
-                "subcatalog": null
+                "title": "Фигурки и статуэтки",
+                "url": "/catalog/suveniry-i-podarki/figurki-i-statuetki",
+                "items": []
             },
             {
-                "text": "Праздничные мелочи",
-                "link": "/catalog/suveniry-i-podarki/prazdnichnye-melochi",
-                "subcatalog": null
+                "title": "Праздничные мелочи",
+                "url": "/catalog/suveniry-i-podarki/prazdnichnye-melochi",
+                "items": []
             },
             {
-                "text": "Фоторамки, фотоальбомы, постеры",
-                "link": "/catalog/suveniry-i-podarki/fotoramki-fotoalbomy-postery",
-                "subcatalog": null
+                "title": "Фоторамки, фотоальбомы, постеры",
+                "url": "/catalog/suveniry-i-podarki/fotoramki-fotoalbomy-postery",
+                "items": []
             },
             {
-                "text": "Подставки, шкатулки, светильники",
-                "link": "/catalog/suveniry-i-podarki/podstavki-shkatulki-svetilniki",
-                "subcatalog": null
+                "title": "Подставки, шкатулки, светильники",
+                "url": "/catalog/suveniry-i-podarki/podstavki-shkatulki-svetilniki",
+                "items": []
             },
             {
-                "text": "Свечи, диффузоры, подсвечники",
-                "link": "/catalog/suveniry-i-podarki/svechi-diffuzory-podsvechniki",
-                "subcatalog": null
+                "title": "Свечи, диффузоры, подсвечники",
+                "url": "/catalog/suveniry-i-podarki/svechi-diffuzory-podsvechniki",
+                "items": []
             },
             {
-                "text": "Зеркала, часы",
-                "link": "/catalog/suveniry-i-podarki/zerkala-chasy",
-                "subcatalog": null
+                "title": "Зеркала, часы",
+                "url": "/catalog/suveniry-i-podarki/zerkala-chasy",
+                "items": []
             }
         ]
     },
     {
-        "text": "Канцтовары",
-        "link": "/catalog/kantstovary",
-        "subcatalog": [
+        "title": "Канцтовары",
+        "url": "/catalog/kantstovary",
+        "items": [
             {
-                "text": "Товары для творчества",
-                "link": "/catalog/kantstovary/tovary-dlya-tvorchestva",
-                "subcatalog": null
+                "title": "Товары для творчества",
+                "url": "/catalog/kantstovary/tovary-dlya-tvorchestva",
+                "items": []
             },
             {
-                "text": "Тетради и блокноты",
-                "link": "/catalog/kantstovary/tetradi-i-bloknoty",
-                "subcatalog": null
+                "title": "Тетради и блокноты",
+                "url": "/catalog/kantstovary/tetradi-i-bloknoty",
+                "items": []
             },
             {
-                "text": "Канцелярские принадлежности",
-                "link": "/catalog/kantstovary/kantselyarskie-prinadlezhnosti",
-                "subcatalog": null
+                "title": "Канцелярские принадлежности",
+                "url": "/catalog/kantstovary/kantselyarskie-prinadlezhnosti",
+                "items": []
             },
             {
-                "text": "Ручки, карандаши, фломастеры",
-                "link": "/catalog/kantstovary/ruchki-karandashi-flomastery",
-                "subcatalog": null
+                "title": "Ручки, карандаши, фломастеры",
+                "url": "/catalog/kantstovary/ruchki-karandashi-flomastery",
+                "items": []
             },
             {
-                "text": "Рюкзаки, пеналы и папки",
-                "link": "/catalog/kantstovary/ryukzaki-penaly-i-papki",
-                "subcatalog": null
+                "title": "Рюкзаки, пеналы и папки",
+                "url": "/catalog/kantstovary/ryukzaki-penaly-i-papki",
+                "items": []
             }
         ]
     },
     {
-        "text": "Книги, раскраски",
-        "link": "/catalog/knigi",
-        "subcatalog": [
+        "title": "Книги, раскраски",
+        "url": "/catalog/knigi",
+        "items": [
             {
-                "text": "Книги",
-                "link": "/catalog/knigi/knigi",
-                "subcatalog": null
+                "title": "Книги",
+                "url": "/catalog/knigi/knigi",
+                "items": []
             },
             {
-                "text": "Раскраски",
-                "link": "/catalog/knigi/raskraski",
-                "subcatalog": null
+                "title": "Раскраски",
+                "url": "/catalog/knigi/raskraski",
+                "items": []
             },
             {
-                "text": "Детские книги",
-                "link": "/catalog/knigi/detskie-knigi",
-                "subcatalog": null
+                "title": "Детские книги",
+                "url": "/catalog/knigi/detskie-knigi",
+                "items": []
             },
             {
-                "text": "Для обучения и развития",
-                "link": "/catalog/knigi/dlya-obucheniya-i-razvitiya",
-                "subcatalog": null
+                "title": "Для обучения и развития",
+                "url": "/catalog/knigi/dlya-obucheniya-i-razvitiya",
+                "items": []
             }
         ]
     },
     {
-        "text": "Авто- и велотовары",
-        "link": "/catalog/avto-moto-velo",
-        "subcatalog": null
+        "title": "Авто- и велотовары",
+        "url": "/catalog/avto-moto-velo",
+        "items": []
     },
     {
-        "text": "Одежда и обувь",
-        "link": "/catalog/odezhda",
-        "subcatalog": [
+        "title": "Одежда и обувь",
+        "url": "/catalog/odezhda",
+        "items": [
             {
-                "text": "Детское белье",
-                "link": "/catalog/odezhda/detskoe-bele",
-                "subcatalog": null
+                "title": "Детское белье",
+                "url": "/catalog/odezhda/detskoe-bele",
+                "items": []
             },
             {
-                "text": "Нижнее белье",
-                "link": "/catalog/odezhda/nizhnee-bele",
-                "subcatalog": null
+                "title": "Нижнее белье",
+                "url": "/catalog/odezhda/nizhnee-bele",
+                "items": []
             },
             {
-                "text": "Одежда",
-                "link": "/catalog/odezhda/_odezhda",
-                "subcatalog": null
+                "title": "Одежда",
+                "url": "/catalog/odezhda/_odezhda",
+                "items": []
             },
             {
-                "text": "Носки, гольфы",
-                "link": "/catalog/odezhda/noski-golfy",
-                "subcatalog": null
+                "title": "Носки, гольфы",
+                "url": "/catalog/odezhda/noski-golfy",
+                "items": []
             },
             {
-                "text": "Детская одежда",
-                "link": "/catalog/odezhda/detskaya-odezhda",
-                "subcatalog": null
+                "title": "Детская одежда",
+                "url": "/catalog/odezhda/detskaya-odezhda",
+                "items": []
             },
             {
-                "text": "Колготки",
-                "link": "/catalog/odezhda/kolgoty",
-                "subcatalog": null
+                "title": "Колготки",
+                "url": "/catalog/odezhda/kolgoty",
+                "items": []
             },
             {
-                "text": "Обувь",
-                "link": "/catalog/odezhda/obuv",
-                "subcatalog": null
+                "title": "Обувь",
+                "url": "/catalog/odezhda/obuv",
+                "items": []
             },
             {
-                "text": "Головные уборы",
-                "link": "/catalog/odezhda/golovnye-ubory",
-                "subcatalog": null
+                "title": "Головные уборы",
+                "url": "/catalog/odezhda/golovnye-ubory",
+                "items": []
             },
             {
-                "text": "Перчатки, варежки",
-                "link": "/catalog/odezhda/perchatki-varezhki",
-                "subcatalog": null
+                "title": "Перчатки, варежки",
+                "url": "/catalog/odezhda/perchatki-varezhki",
+                "items": []
             },
             {
-                "text": "Ветровки",
-                "link": "/catalog/odezhda/vetrovki",
-                "subcatalog": null
+                "title": "Ветровки",
+                "url": "/catalog/odezhda/vetrovki",
+                "items": []
             },
             {
-                "text": "Шарфы и платки",
-                "link": "/catalog/odezhda/sharfy-i-platki",
-                "subcatalog": null
+                "title": "Шарфы и платки",
+                "url": "/catalog/odezhda/sharfy-i-platki",
+                "items": []
             },
             {
-                "text": "Блузки",
-                "link": "/catalog/odezhda/bluzki",
-                "subcatalog": null
+                "title": "Блузки",
+                "url": "/catalog/odezhda/bluzki",
+                "items": []
             }
         ]
     },
     {
-        "text": "Аксессуары",
-        "link": "/catalog/aksessuary",
-        "subcatalog": [
+        "title": "Аксессуары",
+        "url": "/catalog/aksessuary",
+        "items": [
             {
-                "text": "Бритвенные принадлежности",
-                "link": "/catalog/aksessuary/britvennye-prinadlezhnosti",
-                "subcatalog": null
+                "title": "Бритвенные принадлежности",
+                "url": "/catalog/aksessuary/britvennye-prinadlezhnosti",
+                "items": []
             },
             {
-                "text": "Рукоделие",
-                "link": "/catalog/aksessuary/rukodelie",
-                "subcatalog": null
+                "title": "Рукоделие",
+                "url": "/catalog/aksessuary/rukodelie",
+                "items": []
             },
             {
-                "text": "Кошельки, чехлы",
-                "link": "/catalog/aksessuary/koshelki-chekhly",
-                "subcatalog": null
+                "title": "Кошельки, чехлы",
+                "url": "/catalog/aksessuary/koshelki-chekhly",
+                "items": []
             },
             {
-                "text": "Аксессуары для волос",
-                "link": "/catalog/aksessuary/aksessuary-dlya-volos",
-                "subcatalog": null
+                "title": "Аксессуары для волос",
+                "url": "/catalog/aksessuary/aksessuary-dlya-volos",
+                "items": []
             },
             {
-                "text": "Косметички",
-                "link": "/catalog/aksessuary/kosmetichki",
-                "subcatalog": null
+                "title": "Косметички",
+                "url": "/catalog/aksessuary/kosmetichki",
+                "items": []
             },
             {
-                "text": "Сумки",
-                "link": "/catalog/aksessuary/sumki",
-                "subcatalog": null
+                "title": "Сумки",
+                "url": "/catalog/aksessuary/sumki",
+                "items": []
             },
             {
-                "text": "Аксессуары для макияжа",
-                "link": "/catalog/aksessuary/aksessuary-dlya-makiyazha",
-                "subcatalog": null
+                "title": "Аксессуары для макияжа",
+                "url": "/catalog/aksessuary/aksessuary-dlya-makiyazha",
+                "items": []
             },
             {
-                "text": "Органайзеры для косметики",
-                "link": "/catalog/aksessuary/organayzery-dlya-kosmetiki",
-                "subcatalog": null
+                "title": "Органайзеры для косметики",
+                "url": "/catalog/aksessuary/organayzery-dlya-kosmetiki",
+                "items": []
             },
             {
-                "text": "Аксессуары по уходу за ногтями",
-                "link": "/catalog/aksessuary/aksessuary-po-ukhodu-za-nogtyami",
-                "subcatalog": null
+                "title": "Аксессуары по уходу за ногтями",
+                "url": "/catalog/aksessuary/aksessuary-po-ukhodu-za-nogtyami",
+                "items": []
             },
             {
-                "text": "Зонты, дождевики",
-                "link": "/catalog/aksessuary/zonty-dozhdeviki",
-                "subcatalog": null
+                "title": "Зонты, дождевики",
+                "url": "/catalog/aksessuary/zonty-dozhdeviki",
+                "items": []
             },
             {
-                "text": "Очки",
-                "link": "/catalog/aksessuary/ochki-i",
-                "subcatalog": null
+                "title": "Очки",
+                "url": "/catalog/aksessuary/ochki-i",
+                "items": []
             },
             {
-                "text": "Зеркала",
-                "link": "/catalog/aksessuary/zerkala",
-                "subcatalog": null
+                "title": "Зеркала",
+                "url": "/catalog/aksessuary/zerkala",
+                "items": []
             },
             {
-                "text": "Расчески",
-                "link": "/catalog/aksessuary/rascheski",
-                "subcatalog": null
+                "title": "Расчески",
+                "url": "/catalog/aksessuary/rascheski",
+                "items": []
             },
             {
-                "text": "Бижутерия",
-                "link": "/catalog/aksessuary/bizhuteriya",
-                "subcatalog": null
+                "title": "Бижутерия",
+                "url": "/catalog/aksessuary/bizhuteriya",
+                "items": []
             }
         ]
     },
     {
-        "text": "Спорт и туризм",
-        "link": "/catalog/sport-i-otdykh",
-        "subcatalog": [
+        "title": "Спорт и туризм",
+        "url": "/catalog/sport-i-otdykh",
+        "items": [
             {
-                "text": "Спорт",
-                "link": "/catalog/sport-i-otdykh/sport",
-                "subcatalog": null
+                "title": "Спорт",
+                "url": "/catalog/sport-i-otdykh/sport",
+                "items": []
             },
             {
-                "text": "Туризм",
-                "link": "/catalog/sport-i-otdykh/turizm",
-                "subcatalog": null
+                "title": "Туризм",
+                "url": "/catalog/sport-i-otdykh/turizm",
+                "items": []
             }
         ]
     },
     {
-        "text": "Здоровье",
-        "link": "/catalog/meditsinskie-tovary",
-        "subcatalog": null
+        "title": "Здоровье",
+        "url": "/catalog/meditsinskie-tovary",
+        "items": []
     },
     {
-        "text": "Праздник круглый год",
-        "link": "/catalog/prazdnik-kruglyy-god",
-        "subcatalog": [
+        "title": "Праздник круглый год",
+        "url": "/catalog/prazdnik-kruglyy-god",
+        "items": [
             {
-                "text": "Новогодние товары",
-                "link": "/catalog/prazdnik-kruglyy-god/novogodnie-tovary",
-                "subcatalog": null
+                "title": "Новогодние товары",
+                "url": "/catalog/prazdnik-kruglyy-god/novogodnie-tovary",
+                "items": []
             },
             {
-                "text": "Подарки любимым",
-                "link": "/catalog/prazdnik-kruglyy-god/podarki_lyubimym",
-                "subcatalog": null
+                "title": "Подарки любимым",
+                "url": "/catalog/prazdnik-kruglyy-god/podarki_lyubimym",
+                "items": []
             },
             {
-                "text": "Товары к Пасхе",
-                "link": "/catalog/prazdnik-kruglyy-god/tovary-k-paskhe",
-                "subcatalog": null
+                "title": "Товары к Пасхе",
+                "url": "/catalog/prazdnik-kruglyy-god/tovary-k-paskhe",
+                "items": []
             }
         ]
     }

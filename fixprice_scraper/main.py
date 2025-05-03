@@ -49,7 +49,7 @@ def prompt_user_for_selection():
         "\nWrite catalog number that you want to scrape.\n"
         "If you want many catalogs, write numbers separated by ',' (example: 1,2,3).\n"
         "If you want the whole catalog, write just the integer number.\n"
-        "If you want only one subcatalog, insert it as a float like 2.2\n> "
+        "If you want only subcatalog, insert it as a float like 2.2\n> "
     )
 
 
@@ -80,7 +80,7 @@ def main():
 
         # Run the ProductSpider
         process = CrawlerProcess(get_project_settings())
-        process.crawl(ProductSpider, catalog_name=item.get('text'), urls=[full_url(item.get('link'))])
+        process.crawl(ProductSpider, catalog_name=item.get('title'), urls=[full_url(item.get('url'))])
         process.start()
 
 

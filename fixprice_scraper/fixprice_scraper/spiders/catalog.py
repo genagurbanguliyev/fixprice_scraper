@@ -17,10 +17,30 @@ class CatalogSpider(scrapy.Spider):
         i18n_redirected=ru; _cfuvid=SS9rd5CCsT8.K3BBl1EQo8TNIir0Po91YIlO7yMJQVg-1745298974184-0.0.1.1-604800000; sigma_experiments=%7B%22mainchange_zbrkjexu%22%3A%7B%22value%22%3Afalse%2C%22date%22%3A%222025-04-22%22%7D%7D; token=MzgwOTc4MzMzMQ%3D%3D%3Ae056c232ca0a8b75367c73987c5cb421; _ymab_param=QqS8n_pb_OnCP8-yhGmRB6P59cseidUwZXkwChMjkOU17RRNJderkUXXNckJYkobuBLZsMxLuLfLvzHza_42ZhzX9AQ; is-logged=; visited=true; skip-city=true; cf_clearance=8DQ6tZcFeKM7Pu3Bg0D2wPEMWHC9J2RChgwIrTnjhQ4-1745577439-1.2.1.1-owWAhX3BzbpkmMI6sKEj3cP0yWizR2eLsmhWl59f1XHJsZwyE1S1En1.AtYlfMRnm_ILeC_MdMieds4nquS.pwrDo6b4nCmhUixDRCbNnT3T2kkBP2LCzkNC0Asa3In2R3ic.6mDT6bJT3FhLRg78S_dYbQ.aFbHfXyL0rR1yq7YqjHPWLwiS6o53hL9hVPYAYw7s9pMv7TzSFevFsF9cFt2.XmuEanOgW12752zRBCydD9mlAWoAU_rljaGUnAMUBHfa0qDpsLGR3UnxW64ZAicuZie51Q_jAgsUcSIQzTUXnd2._py9UTCXP8XGa842KQTWmL2B6APm9.dTUV3IO08PlZG5oTm3Y2ngKbKqXE; locality=%7B%22city%22%3A%22%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3%22%2C%22cityId%22%3A55%2C%22longitude%22%3A60.597474%2C%22latitude%22%3A56.838011%2C%22prefix%22%3A%22%D0%B3%22%7D
         """
 
+    headers = {
+        "accept": "application/json, text/plain, */*",
+        "accept-language": "en-US,en;q=0.9,ru;q=0.8",
+        "content-type": "application/json",
+        "origin": "https://fix-price.com",
+        "priority": "u=1, i",
+        "referer": "https://fix-price.com/",
+        "sec-ch-ua": "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Linux\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "x-city": "55",
+        "x-key": "MzgwOTc4MzMzMQ==:e056c232ca0a8b75367c73987c5cb421",
+        "x-language": "ru"
+    }
+
     def start_requests(self):
         cookies = {k.strip(): v for k, v in (item.split("=") for item in self.cookie_string.split(";"))}
         yield scrapy.Request(
             url=self.start_urls[0],
+            headers=self.headers,
             cookies=cookies,
             callback=self.parse_catalog
         )
@@ -45,9 +65,9 @@ class CatalogSpider(scrapy.Spider):
             return None
 
         item = {
-            "text": title_el.css("::text").get(default="").strip(),
-            "link": title_el.attrib.get("href"),
-            "subcatalog": []
+            "title": title_el.css("::text").get(default="").strip(),
+            "url": title_el.attrib.get("href"),
+            "items": []
         }
 
         # Check for sub-items
@@ -55,13 +75,13 @@ class CatalogSpider(scrapy.Spider):
         if sub_links:
             for sub in sub_links:
                 sub_item = {
-                    "text": sub.css("::text").get(default="").strip(),
-                    "link": sub.attrib.get("href"),
-                    "subcatalog": None
+                    "title": sub.css("::text").get(default="").strip(),
+                    "url": sub.attrib.get("href"),
+                    "items": []
                 }
-                item["subcatalog"].append(sub_item)
+                item["items"].append(sub_item)
 
-        if not item["subcatalog"]:
-            item["subcatalog"] = None
+        if not item["items"]:
+            item["items"] = []
 
         return item
