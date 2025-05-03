@@ -80,7 +80,7 @@ def main():
 
         # Run the ProductSpider
         process = CrawlerProcess(get_project_settings())
-        process.crawl(ProductSpider, catalog_name=item.get('title'), urls=[full_url(item.get('url'))])
+        process.crawl(ProductSpider, catalogs=selected_catalogs)
         process.start()
 
 

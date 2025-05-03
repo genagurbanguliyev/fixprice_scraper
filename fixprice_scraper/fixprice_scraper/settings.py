@@ -22,8 +22,6 @@ DOWNLOAD_HANDLERS = {
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 
-COOKIES_ENABLED = True
-COMPRESSION_ENABLED = False
 RETRY_ENABLED = True
 RETRY_TIMES = 3
 DOWNLOAD_DELAY = 1
