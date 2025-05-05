@@ -8,6 +8,7 @@ from scrapy.utils.project import get_project_settings
 from fixprice_scraper.spiders.product import ProductSpider
 CATALOG_FILE = "catalog.json"
 BASE_URL = "https://fix-price.com"
+OUTPUT_FILE = "products.json"
 
 
 def full_url(url):
@@ -34,12 +35,12 @@ def display_catalog(catalog_data):
     index_map = {}
     print("\nAvailable Catalogs:\n")
     for i, item in enumerate(catalog_data, 1):
-        print(f"{i}. {item['text']}")
+        print(f"{i}. {item['title']}")
         index_map[str(i)] = item
-        if item.get("subcatalog"):
-            for j, child in enumerate(item["subcatalog"], 1):
+        if item.get("items"):
+            for j, child in enumerate(item["items"], 1):
                 key = f"{i}.{j}"
-                print(f"  {key}. {child['text']}")
+                print(f"  {key}. {child['title']}")
                 index_map[key] = child
     return index_map
 
@@ -76,12 +77,28 @@ def main():
 
     print("\n✅ You selected:")
     for item in selected_catalogs:
-        print(f"- {item['text']} (url: {item.get('link')})")
+        print(f"- {item['title']} (url: {item.get('url')})")
 
-        # Run the ProductSpider
-        process = CrawlerProcess(get_project_settings())
-        process.crawl(ProductSpider, catalogs=selected_catalogs)
-        process.start()
+    settings = get_project_settings()
+    settings.set('FEEDS', {
+        OUTPUT_FILE: {
+            'format': 'json',
+            'encoding': 'utf8',
+            'store_empty': False,
+            'fields': None,
+            'indent': 4,
+        }
+    })
+
+    # Run the ProductSpider
+    process = CrawlerProcess(settings)
+    process.crawl(
+        "product_api",
+        catalogs=selected_catalogs
+    )
+    process.start()
+
+    print(f"\nScraping complete! Results saved to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":

@@ -13,19 +13,6 @@ nosetests.xml
 coverage.xml
 *.cover
 *.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
 
 
 # Scrapy stuff:
@@ -40,3 +27,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Data
+*.json
